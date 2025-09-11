@@ -20,6 +20,11 @@ body {
     overflow: hidden;
 }
 
+body {
+    background: url('../tbg.gif') repeat;
+    background-size: 100% 100%;
+}
+
 .container {
     width: 100%;
     min-height: 100vh;
