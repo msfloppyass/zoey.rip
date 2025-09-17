@@ -13,7 +13,7 @@ html,
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: "Playpen Sans", sans-serif;
     background-color: var(--background-color);
     color: var(--primary-color);
     height: 100%;
@@ -21,8 +21,9 @@ body {
 }
 
 body {
-    background: url('../tbg.gif') repeat;
-    background-size: 100% 100%;
+    background-image: url("../img/paw_bg2.png");
+    background-repeat: repeat;
+    background-size: auto;
 }
 
 .container {
@@ -102,6 +103,17 @@ header h1 {
     -webkit-animation: glow 1s ease-in-out infinite alternate;
     -moz-animation: glow 1s ease-in-out infinite alternate;
     animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60000, 0 0 40px #c50000, 0 0 50px #9f0000, 0 0 60px #c00000, 0 0 70px #ff0000;
+    }
+
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #e60000, 0 0 40px #c50000, 0 0 50px #9f0000, 0 0 60px #c00000, 0 0 70px #ff0000, 0 0 80px #ff4d4d
+    }
+    
 }
 
 @-webkit-keyframes glow {

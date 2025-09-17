@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+    font-family: "Playpen Sans", sans-serif;
+}
+
+:root {
+    --primary-color: #ffffff;
+    --background-color: #000000;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    height: 100%;
+    overflow: hidden;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
