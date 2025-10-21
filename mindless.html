@@ -1,84 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zoey's Bio</title>
-    <style>
-        html,
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-            background-color: #000000;
-            color: #ffffff;
-            font-family: 'Questrial', sans-serif;
-            overflow: hidden;
-            overflow-x: hidden;
-            overflow-y: scroll;
-            scrollbar-width: none;
-            -ms-overflow-style: none;
-        }
-        .container {
-            width: 100%;
-            margin: auto;
-            background: rgb(0, 0, 0);
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-        .p-box {
-            max-width: 500px;
-            width: 100%;
-            padding: 15px;
-            margin-bottom: 20px;
-            border-radius: 5px;
-        }
-        h1 {
-            text-align: center;
-            font-weight: 700;
-            font-size: 2.5em;
-        }
-        p {
-            line-height: 1.6;
-        }
-        .dashed {
-            width: 50%;
-            margin: 20px 0;
-            border-top: 1px dashed #ffffff;
-            border-bottom: none;
-        }
-        hr.dotted {
-            width: 50%;
-            margin: 20px 0;
-            border-top: 1px dotted #ffffff;
-            border-bottom: none;
-        }
 
-    </style>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zoey C. Cowley</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Noto+Color+Emoji&display=swap" rel="stylesheet">
+    <style>
+        @font-face {
+            font-family: "Cheri";
+            src: url("./cheri.woff") format("woff");
+            font-display: swap;
+        }
+
+        .cheri {
+            font-family: "Cheri", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .nce {
+            font-family: "Noto Color Emoji", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+    </style>
+    <link rel="icon" href="static/img/icon/favicon.gif" type="image/gif">
 </head>
-<body>
-    <div class="container">
-        <h1>@mindlesszoey</h1>
-        <hr class="dashed">
-        <h2>Brief about me</h2>
-        <div class="p-box">
-            <p>My name is Zoey. I'm an 18 year old trans girl & software developer. I use she/they pronouns mainly but also use it/its pronouns in certain situations. My main account is @msfloppyass, but it's mainly just for daily use</p>
-        </div>
-        <h2>About sending me DMs</h2>
-        <div class="p-box">
-            <p>Please make sure to ask me first in a mutual server, I prefer to know when people will DM me. I am in a dedicated relationship and will not entertain attempts at romantic or sexual advances.</p>
-        </div>
-        <h2>About NSFW stuff</h2>
-        <div class="p-box">
-            <p>I'm fine discussing kink/NSFW topics as long as it stays respectful, platonic, and civil. Don't send me unsolicited nudes or pornographic content without asking.</p>
-        </div>
-        <hr class="dashed">
-    </div>
+
+<body class="bg-black text-white font-sans leading-relaxed">
+    <main class="max-w-3xl mx-auto p-6 space-y-8">
+        <!-- Header -->
+        <header class="text-center">
+            <h1 class="text-5xl font-bold mb-2 cheri">Zoey Cowley <span class="nce">🏳️‍⚧️</h1>
+            <p class="text-gray-400 text-sm cheri">About Me @ Social Media Guidelines</p>
+        </header>
+
+        <!-- Introduction -->
+        <section id="intro">
+            <h2 class="text-xl font-semibold border-b border-gray-700 pb-1 mb-2 cheri">
+                @Introduction@
+            </h2>
+            <div class="space-y-4 text-sm text-gray-200">
+                <p>
+                    Hey there, I'm Zoey Cowley! I'm an 18 year old Canadian transgender woman primarily
+                    dabbling in programming, robotics, art, and medical studies (mainly of transgender science)!
+                    My favourite colours are red, purple, and green! To satisfy my natural curiosity, I'm on a journey to explore
+                    different kinks & fetishes while documenting my experiences with and researching each one.
+                    At my core, I'm a very creative person, and love to incorporate my experiences into my art, either through
+                    drawing, writing, or even just posting on social media! Feel free to reach out if you want to discuss something, 
+                    share an experience, or even just chat about anything!
+                </p>
+            </div>
+        </section>
+
+        <!-- Boundaries -->
+        <section id="boundaries">
+            <h2 class="text-xl font-semibold border-b border-gray-700 pb-1 mb-4 cheri">
+                @Boundaries@
+            </h2>
+            <div class="space-y-4 text-sm text-gray-200">
+                <p>
+                    <b>Just because my posts regard NSFW topics & content <u>DOES NOT MEAN</u>
+                    that I am open to sexting or flirting during chats.</b> I am in a
+                    dedicated monogamous relationship and am not interested in
+                    entertaining attempts to flirt with the intent to start a romantic /
+                    sexual relationship with me. Anyone attempting this will be blocked
+                    out of respect for my partner. I also do not ERP, do not contact me
+                    with the intent of asking me to ERP.
+                </p>
+
+                <p>
+                    <b>I will gladly discuss NSFW / kink topics, but <u>SOLELY</u> in a platonic,
+                    educational, or supportive context.</b> I'm happy to offer my (probably
+                    limited amount of) assistance, share experience, and give / take
+                    compliments when necessary, but any sort of (non silly) flirting, sexual
+                    advances, or boundary pushing won't be tolerated.
+                </p>
+
+                <p>
+                    <b>I will <u>ABSOLUTELY NOT</u> interact with anyone under the age of 18.</b>
+                    Whether on social media, instant messaging, or any other relevant
+                    platform. If I am contacted by someone under the age of 18 on my
+                    NSFW account, with absolutely no exceptions, I will block them
+                    immediately. Do not attempt to interact with my content if you are
+                    &lt;18 years old.
+                </p>
+
+                <p>
+                    <b>There are topics that I <u>WILL NOT</u> discuss. Please accept that.</b> There
+                    are NSFW topics or kinks that make me uncomfortable and that I'm not
+                    into discussing, I expect that to be respected. Some examples are:
+                    Ageplay, Beastiality, Scat, Vore, Incest, Raceplay, etc. These are
+                    things that I'm either against or just simply not into, refrain from bringing them up.
+                </p>
+
+                <p>
+                    <b>My DMs are open but <u>ONLY</u> for respectful conversation.</b> When
+                    interacting with me, be respectful. Do not be racist, homophobic,
+                    transphobic, etc when interacting with me. I won't tolerate verbal
+                    abuse in my DMs and you'll just be blocked.
+                </p>
+
+                <p>
+                    <b>I treat everyone's private messages with care, so should you.</b> Unless
+                    I've given permission, I expect for DMs to stay private between me
+                    and whoever I'm conversing with. Please do not leak or publicize
+                    private messages without my consent. I will NEVER leak messages and
+                    if necessary will always ask for consent before sharing your private
+                    messages to me with others.
+                </p>
+            </div>
+        </section>
+
+        <!-- Links -->
+        <section id="Links">
+            <h2 class="text-xl font-semibold border-b border-gray-700 pb-1 mb-2 cheri">
+                @Links@
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-gray-200">
+                <!-- Reddit -->
+                <a href="https://reddit.com/u/zoeycowley" 
+                    class="flex items-center p-3 rounded-lg bg-gray-900 hover:bg-gray-800 transition-colors">
+                    <img src="static/img/icon/icon-reddit.png" class="w-6 h-6 mr-3">
+                    <div>
+                        <div class="font-medium">Reddit (NSFW)</div>
+                        <div class="text-gray-400 text-xs">@zoeycowley</div>
+                    </div>
+                </a>
+
+                <!-- Bluesky -->
+                <a href="https://zoeycowley.bsky.social" 
+                    class="flex items-center p-3 rounded-lg bg-gray-900 hover:bg-gray-800 transition-colors">
+                    <img src="static/img/icon/icon-bluesky.png" class="w-6 h-6 mr-3">
+                    <div>
+                        <div class="font-medium">Bluesky (NSFW)</div>
+                        <div class="text-gray-400 text-xs">@zoeycowley.bsky.social</div>
+                    </div>
+                </a>
+
+                <!-- Bad Dragon Wishlist -->
+                <a href="https://bad-dragon.com/w/6b4aec5b" 
+                    class="flex items-center p-3 rounded-lg bg-gray-900 hover:bg-gray-800 transition-colors">
+                    <img src="static/img/icon/icon-baddragon.png" alt="Wishlist" class="w-6 h-6 mr-3">
+                    <div>
+                        <div class="font-medium">Bad Dragon List (NSFW)</div>
+                        <div class="text-gray-400 text-xs">View my wishlist</div>
+                    </div>
+                </a>
+
+                <!-- BDSM test -->
+                <a href="https://bdsmtest.org/r/Ks7smrSv" 
+                    class="flex items-center p-3 rounded-lg bg-gray-900 hover:bg-gray-800 transition-colors">
+                     <img src="static/img/icon/icon-bdsm.png" alt="Praise" class="w-6 h-6 mr-3">
+                    <div>
+                        <div class="font-medium">BDSMTest (NSFW)</div>
+                        <div class="text-gray-400 text-xs">Ks7smrSv</div>
+                    </div>
+                </a>
+
+                <!-- PleasePraiseMe -->
+                <a href="https://pleasepraise.me/zoey" 
+                    class="flex items-center p-3 rounded-lg bg-gray-900 hover:bg-gray-800 transition-colors">
+                    <img src="static/img/icon/icon-paw.png" alt="Praise" class="w-6 h-6 mr-3">
+                    <div>
+                        <div class="font-medium">PleasePraiseMe</div>
+                        <div class="text-gray-400 text-xs">@zoey</div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <footer class="text-center text-xs text-gray-600 pt-6 border-t border-gray-800">
+            © 2025 Zoey C. Cowley • No rights reserved, I partially wrote this with ChatGPT (lazy)
+        </footer>
+    </main>
 </body>
+
 </html>
