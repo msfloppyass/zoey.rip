@@ -1,0 +1,225 @@
+@font-face {
+    font-family: "Sweet Puppy";
+    src: url("../../SweetPuppy.woff") format("woff");
+}
+
+:root {
+    --dark-bg: #000000;
+    --less-dark-bg: #3a2a4f;
+    --bright-red: #946c37;
+    --darker-red: #5e320e;
+    --text-muted: #c9c3cf;
+    --text-main: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: var(--dark-bg);
+    color: var(--text-main);
+    font-family: "Sweet Puppy", sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 160px;
+    overflow: visible;
+}
+
+@media (max-width: 500px) {
+    header {
+        height: 120px !important;
+    }
+
+    header h1 {
+        font-size: 2.5em !important;
+    }
+
+    sup {
+        display: none !important;
+    }
+
+    .links-box {
+        flex-direction: column !important;
+        align-items: center !important;
+        width: 100% !important;
+    }
+
+    .icon-button-slim {
+        width: 100%;
+    }
+}
+
+header h1 {
+    color: var(--text-main);
+    font-weight: 100;
+    font-size: 3em;
+    text-shadow: 4px 6px 2px var(--bright-red);
+    -webkit-text-stroke-width: 3px;
+    text-stroke-width: 3px;
+    text-transform: uppercase;
+    user-select: none;
+    transition: 0.2s ease-in-out;
+    margin: 0;
+}
+
+header h1:hover {
+    cursor: default;
+    transform: scale(1.1);
+}
+
+@keyframes expandBoxShadow {
+    0% {
+        box-shadow: 6px 6px var(--bright-red);
+        transform: translate(-6px, -6px);
+    }
+    100% {
+        box-shadow: 12px 12px var(--bright-red);
+        transform: translate(-12px, -12px);
+    }
+}
+
+.icon-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 300px;
+    height: 50px;
+    margin: 6px;
+    border: none;
+    border-radius: 14px;
+    background-color: var(--text-main);
+    color: var(--dark-bg);
+    position: relative;
+
+    /* toon shading */
+    box-shadow: 6px 6px var(--bright-red);
+    transform: translate(-6px, -6px);
+    transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.icon-button-slim {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 14px;
+    background-color: var(--text-main);
+    color: var(--dark-bg);
+    position: relative;
+
+    /* toon shading */
+    box-shadow: 6px 6px var(--bright-red);
+    transform: translate(-6px, -6px);
+    transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.icon-button:hover {
+    animation: expandBoxShadow 0.2s forwards;
+    cursor: pointer;
+}
+
+.icon-button-slim:hover {
+    animation: expandBoxShadow 0.2s forwards;
+    cursor: pointer;
+}
+
+.icon-button img {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: 24px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.icon-button-slim img {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.icon-button span {
+    font-size: 14px;
+    font-weight: 600;
+    align-self: center;
+    flex: 1;
+    text-align: center;
+}
+
+.icon-button-slim span {
+    font-size: 12px;
+    font-weight: 600;
+    align-self: center;
+    flex: 1;
+    text-align: center;
+}
+
+noscript {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+}
+
+noscript p {
+    margin: 0;
+    color: red;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.paragraph-box {
+    width: 60%;
+    max-width: 800px;
+    min-width: 300px;
+    border-radius: 12px;
+    padding: 20px;
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+
+.links-box {
+    width: 60%;
+    max-width: 800px;
+    min-width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 30px;
+    margin-top: 40px;
+}

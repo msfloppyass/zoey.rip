@@ -1,125 +1,49 @@
-<!-- mobile users can suffer through using my unoptimized site -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- meta -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>zoey cowley</title>
-    <link rel="stylesheet" href="static/css/main.css">
-    <link rel="icon" href="static/img/icon/favicon.gif" type="image/gif">
+    <title>zoey da pwuppy</title>
+    <link rel="stylesheet" href="static/css/index.css">
 
-    <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Playpen+Sans:wght@100..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        body, html {
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-            background: #000000;
-        }
-
-        .container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            width: 100%;
-            height: 100%;
-        }
-
-        .link-box {
-            display: flex;
-            flex-direction: row;
-            gap: 20px;
-        }
-
-        .link-box a {
-            text-decoration: none;
-            color: #ffffff;
-            font-family: 'Gloria Hallelujah', cursive;
-            font-weight: 600;
-            font-size: 0.9em;
-            padding: 6px 23px;
-            transition: 0.3s;
-        }
-
-        .link-box a img {
-            vertical-align: middle;
-            width: 18px;
-            height: 18px;
-        }
-
-        .link-box a:hover {
-            transform: scale(1.1);
-        }
-
-        .link-box-nsfw a {
-            color: rgb(124, 0, 0) !important;
-        }
-
-        .link-box-highlight a {
-            color: #ffe602 !important; 
-        }
-
-        .link-box-writing a {
-            color: #c641ff !important;
-        }
-    </style>
     <div class="container">
         <header>
-            <h1 style="color: #ffffff; font-family: 'Gloria Hallelujah', cursive; font-size: 2em; margin-bottom: 40px;">Zoey Cowley</h1>
+            <h1>Zoey Cowley<sup><img style="width: 64px; height: 64px;" src="./static/img/pawsup.png"></sup></h1>
+            <noscript>
+                <p>Hehe! No <img style="width: 18px; height: 18px; transform: translateY(3px);" src="./static/img/js.png"> here!</p>
+            </noscript>
         </header>
-        <div class="link-box-writing link-box">
-            <a href="https://zoey.rip/statuses" target="_blank" rel="noopener noreferrer">
-                <img src="./static/img/icon/icon-discordstatus.png" alt="Discord Statuses"> Statuses
-            </a>
+        <a href="about">
+            <div class="icon-button">
+                <img src="./static/img/paw.png">
+                <span>About Me</span>
+            </div>
+        </a>
+        <a href="socials">
+            <div class="icon-button">
+                <img src="./static/img/social.png">
+                <span>My Socials</span>
+            </div>
+        </a>
+        <a href="wishlists">
+        <div class="icon-button">
+            <img src="./static/img/gift.png">
+            <span>My Wishlists</span>
         </div>
-        <div class="link-box-writing link-box">
-            <a href="https://zoey.rip/boundaries" target="_blank" rel="noopener noreferrer">
-                <img src="./static/img/icon/icon-flower.png" alt="Boundaries Icon"> Boundaries
-            </a>
-        </div>
-        <div class="link-box-highlight link-box">
-            <a href="https://pronouns.cc/@msfloppyass" target="_blank" rel="noopener noreferrer">
-                <img src="./static/img/icon/icon-pronouns.png" alt="Pronouns Icon"> Pronouns
-            </a>
-        </div>
-        <div class="link-box-highlight link-box">
-            <a href="mailto:zoey@zoey.rip" target="_blank" rel="noopener noreferrer">
-                <img src="./static/img/icon/icon-mail.png" alt="E-mail Icon"> E-Mail Me
-            </a>
-        </div>
-        <div class="link-box">
-            <a href="https://zoey.rip/socials" target="_blank" rel="noopener noreferrer">
-                <img src="./static/img/icon/icon-social.png" alt="Social Icon"> Socials
-            </a>
-        </div>
-        <div class="link-box">
-            <a href="https://zoey.rip/games" target="_blank" rel="noopener noreferrer">
-                <img src="./static/img/icon/icon-games.png" alt="Games Icon"> Games
-            </a>
-        </div>
-        <div class="link-box">
-            <a href="https://zoey.rip/wishlists" target="_blank" rel="noopener noreferrer">
-                <img src="./static/img/icon/icon-gift.png" alt="Wishlist Icon"> Wishlist
-            </a>
-        </div>
-        <div class="link-box-nsfw link-box">
-            <a href="https://zoey.rip/nsfw" target="_blank" rel="noopener noreferrer">
-                <img src="./static/img/icon/icon-heart-red.png" alt="NSFW Icon"> NSFW
-            </a>
-        </div>
+        </a>
+        <a href="nsfw">
+            <div class="icon-button">
+                <img src="./static/img/drops.png">
+                <span>NSFW Stuff</span>
+                <img src="./static/img/u18.png" style="position: absolute; top: 5px; left: 275px; width: 36px; height: 36px;">
+            </div>
+        </a>
+        <p style="margin-top: 50px;">E-Mail: <span style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">zoey@zoey.rip • </span>&lt;3</p>
     </div>
 </body>
 </html>
